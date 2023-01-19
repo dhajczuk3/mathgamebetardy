@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,800;1,100;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/stylesDivision.css">
+    <title>Division</title>
+</head>
+<style>
+    body {
+        background-image: url("images/divisionbg.jpg");
+    }
+</style>
+
+<body>
+    <audio id="audioRight">
+        <source src="audio/right.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="audioWrong">
+        <source src="audio/wrong.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="cirlescontainer">
+        <div id="time-score">
+            <h2>TIME: <span id="timer">0</span></h2>
+            <h2>SCORE: <span id="score">0</span></h2>
+        </div>
+
+        <p class="scoremessage"></p>
+
+        <div id="circles">
+            <div id="C1" class="circle C1">3</div>
+            <div id="C2" class="circle C2">2</div>
+            <div id="C3" class="circle C3">4</div>
+            <div id="C4" class="circle C4">5</div>
+            <div id="C5" class="circle C5">6</div>
+            <div id="C6" class="circle C6">7</div>
+            <div id="C7" class="circle C7">8</div>
+            <div id="C8" class="circle C8">10</div>
+            <div id="C9" class="circle C9">1</div>
+        </div>
+
+        <div id="footer">
+            <div id="btn_reload">NEW GAME</div>
+            <div id="btn_start">START TIMER</div>
+        </div>
+
+        <div id="container1">
+            <div id="dropZone">
+                <div id="zone1" class="zone">9</div>
+                <div id="zone2" class="zone">/</div>
+                <div id="zone3" class="zone">3</div>
+                <div id="zone4" class="zone">=</div>
+                <div id="result1" class="zone" data-value="C1"><img src="images/questionmark.png" height="100%"></div>
+            </div>
+
+            <div id="dropZone2">
+                <div id="zone1" class="zone">2</div>
+                <div id="zone2" class="zone">/</div>
+                <div id="result2" class="zone" data-value="C2"><img src="images/questionmark.png" height="100%"></div>
+                <div id="zone4" class="zone">=</div>
+                <div id="zone5" class="zone">1</div>
+            </div>
+
+            <div id="dropZone3">
+                <div id="zone1" class="zone">16</div>
+                <div id="zone2" class="zone">/</div>
+                <div id="zone3" class="zone">4</div>
+                <div id="zone4" class="zone">=</div>
+                <div id="result3" class="zone" data-value="C3"><img src="images/questionmark.png" height="100%"></div>
+
+            </div>
+        </div>
+
+
+        <div id="container2">
+            <div id="dropZone">
+                <div id="zone1" class="zone">5</div>
+                <div id="zone2" class="zone">/</div>
+                <div id="result4" class="zone" data-value="C4"><img src="images/questionmark.png" height="100%"></div>
+                <div id="zone4" class="zone">=</div>
+                <div id="zone5" class="zone">1</div>
+            </div>
+
+            <div id="dropZone2">
+                <div id="result5" class="zone" data-value="C5"><img src="images/questionmark.png" height="100%"></div>
+                <div id="zone2" class="zone">/</div>
+                <div id="zone3" class="zone">2</div>
+                <div id="zone4" class="zone">=</div>
+                <div id="zone5" class="zone">3</div>
+            </div>
+
+            <div id="dropZone3">
+                <div id="zone1" class="zone">7</div>
+                <div id="zone2" class="zone">/</div>
+                <div id="zone3" class="zone">1</div>
+                <div id="zone4" class="zone">=</div>
+                <div id="result6" class="zone" data-value="C6"><img src="images/questionmark.png" height="100%"></div>
+            </div>
+        </div>
+
+        <div id="container3">
+            <div id="dropZone">
+                <div id="zone1" class="zone">8</div>
+                <div id="zone2" class="zone">/</div>
+                <div id="result7" class="zone" data-value="C7"><img src="images/questionmark.png" height="100%"></div>
+                <div id="zone4" class="zone">=</div>
+                <div id="zone5" class="zone">1</div>
+            </div>
+
+            <div id="dropZone2">
+                <div id="zone1" class="zone">10</div>
+                <div id="zone2" class="zone">/</div>
+                <div id="result8" class="zone" data-value="C8"><img src="images/questionmark.png" height="100%"></div>
+                <div id="zone4" class="zone">=</div>
+                <div id="zone5" class="zone">1</div>
+            </div>
+
+            <div id="dropZone3">
+                <div id="zone1" class="zone">5</div>
+                <div id="zone2" class="zone">/</div>
+                <div id="zone3" class="zone">5</div>
+                <div id="zone4" class="zone">=</div>
+                <div id="result9" class="zone" data-value="C9"><img src="images/questionmark.png" height="100%"></div>
+            </div>
+        </div>
+
+
+
+        <div id="footer">
+            <a href="index.html">
+                <div id="btn_main">MAIN MENU</div>
+            </a>
+        </div>
+    </div>
+
+    <script src="jq/jqueryUI/jquery-ui.min.css"></script>
+    <script src="jq/jqueryCORE/jquery-3.6.1.min.js"></script>
+    <script src="jq/jqueryUI/jquery-ui.min.js"></script>
+    <script src="js/scriptDivision.js"></script>
+
+</body>
+
+</html>

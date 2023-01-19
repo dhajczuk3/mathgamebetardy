@@ -1,0 +1,271 @@
+#circles {
+    display: flex;
+    justify-content: center;
+
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: 'Calibri';
+    font-weight: 300;
+    text-align: center;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    margin: 1rem;
+    color: #3f3f59;
+    font-size: 2rem;
+    font-family: 'Calibri';
+    font-weight: 600;
+    border-radius: 30%;
+}
+
+.C1 {
+    background-color: #00ff00;
+}
+
+.C2 {
+    background-color: #00ff40;
+}
+
+.C3 {
+    background-color: #00fa3e;
+}
+
+.C4 {
+    background-color: #00c278;
+}
+
+.C5 {
+    background-color: #00d40b;
+}
+
+.C6 {
+    background-color: #00ff88;
+}
+
+.C7 {
+    background-color: #00f36d;
+}
+
+.C8 {
+    background-color: #40ff96;
+}
+
+.C9 {
+    background-color: #00ff22;
+}
+
+#container1 {
+    display: flex;
+    flex-direction: row;
+}
+
+#container2 {
+    display: flex;
+    flex-direction: row;
+}
+
+#container3 {
+    display: flex;
+    flex-direction: row;
+}
+
+
+#dropZone {
+    display: flex;
+    margin: 2rem auto;
+    height: 10vH;
+    justify-content: center;
+    border: 9px solid #00d169;
+    font-family: "Calibri";
+    font-size: 3rem;
+    font-weight: 200;
+    border-radius: 25px;
+    background: #ffffff;
+    padding: 5px;
+}
+
+#dropZone2 {
+    display: flex;
+    margin: 2rem auto;
+    height: 10vH;
+    justify-content: center;
+    border: 10px solid #00ff62;
+    font-family: "Calibri";
+    font-size: 3rem;
+    font-weight: 200;
+    border-radius: 25px;
+    background: #ffffff;
+    padding: 5px;
+}
+
+#dropZone3 {
+    display: flex;
+    margin: 2rem auto;
+    height: 10vH;
+    justify-content: center;
+    border: 10px solid #00c010;
+    font-family: "Calibri";
+    font-size: 3rem;
+    font-weight: 200;
+    border-radius: 25px;
+    background: #ffffff;
+    padding: 5px;
+}
+
+#dropZone>p {
+    color: #ffffff;
+    font-size: 5rem;
+    font-family: "Calibri";
+    font-weight: 600;
+}
+
+.result {
+    border: 1px solid rgb(0, 235, 106);
+}
+
+.zone {
+    border: 1px solid rgb(43, 255, 0);
+}
+
+#zone1 {
+    color: white;
+    width: 75px;
+    background-color: #09c036;
+    text-align: center;
+    padding-top: 1rem;
+    text-shadow: 2px 2px 5px rgb(128, 0, 0);
+
+}
+
+#zone2 {
+    color: white;
+    width: 50px;
+    background-color: #00ad26;
+    text-align: center;
+    padding-top: 1rem;
+    text-shadow: 2px 2px 5px rgb(255, 0, 0);
+
+}
+
+#zone3 {
+    color: white;
+    width: 75px;
+    background-color: #03ad50;
+    text-align: center;
+    padding-top: 1rem;
+    text-shadow: 2px 2px 5px rgb(255, 1, 1);
+}
+
+#zone4 {
+    color: white;
+    width: 50px;
+    background-color: #00ff22;
+    text-align: center;
+    padding-top: 1rem;
+    text-shadow: 2px 2px 5px rgb(255, 0, 0);
+}
+
+#zone5 {
+    color: white;
+    width: 75px;
+    background-color: #00ac42b9;
+    text-align: center;
+    padding-top: 1rem;
+    text-shadow: 2px 2px 5px rgb(0, 182, 39);
+}
+
+.drop-hover {
+    background-color: #009431;
+}
+
+.ui-draggable-dragging {
+    transform: scale(.8)rotate(25deg);
+    box-shadow: 2px 5px 12px rgb(0, 194, 42);
+}
+
+h2,
+span {
+    font-size: 3rem;
+    font-family: "Calibri";
+    font-weight: 600;
+    color: #ffffff;
+}
+
+h2 {
+    color: #000000;
+}
+
+#footer {
+    display: flex;
+    margin: 1rem 0;
+    justify-content: center;
+}
+
+
+#btn_reload,
+#btn_start,
+#btn_main {
+    width: 300px;
+    margin: 1rem;
+    padding: 1rem;
+    font-family: "Calibri";
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 2px;
+    background-color: #000000;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+}
+
+#btn_start {
+    background-color: #000000;
+}
+
+#btn_reload:hover {
+    background-color: #008f13;
+}
+
+#btn_start:hover {
+    background-color: #008f13;
+}
+
+#btn_main:hover {
+    background-color: #008f13;
+}
+
+.scoremessage {
+    display: none;
+    width: 850px;
+    margin: 0 auto;
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: "Calibri";
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgb(255, 0, 0);
+}
+
+#time-score {
+    display: flex;
+    justify-content: space-around;
+    text-shadow: 2px 2px 5px rgb(43, 255, 0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+canvas#canvas {
+    display: block;
+    background: #000;
+}
